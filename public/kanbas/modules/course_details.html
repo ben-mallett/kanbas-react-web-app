@@ -1,0 +1,167 @@
+<div>
+    <div style="display: flex; flex-direction: row; align-items: flex-start;">
+        <button type="button"><a href="/kanbas/course_details/index.html">Course Details</a></button>
+        <button type="button">Sections</button>
+        <button type="button"><a href="/kanbas/course_details/nav_edit.html">Navigation</a></button>
+        <button type="button">Apps</button>
+        <button type="button">Feature Options</button>
+        <button type="button">Integrations</button>
+    </div>
+    <h1>Course Details</h1>
+    <table>
+        <tbody>
+            <tr>
+                <td style="vertical-align: baseline;"><strong>Image: </strong></td>
+                <td style="vertical-align: baseline;"><input type="file"></td>
+            </tr>
+            <tr>
+                <td style="vertical-align: baseline;"><strong>Name: </strong></td>
+                <td style="vertical-align: baseline;"> CS4550 12631 Web Development SEC 01 Fall 2023 [BOS-1-TR]</td>
+            </tr>
+            <tr>
+                <td style="vertical-align: baseline;"><strong>Course Code: </strong></td>
+                <td style="vertical-align: baseline;">CS4550.12631.202410</td>
+            </tr>
+            <tr>
+                <td style="vertical-align: baseline;"><strong>Blueprint Course: </strong></td>
+                <td style="vertical-align: baseline;">No</td>
+            </tr>
+            <tr>
+                <td style="vertical-align: baseline;"><strong>Course Template</strong></td>
+                <td style="vertical-align: baseline;">
+                    <input type="checkbox" value="CT" id="chk-ct" disabled/>
+                    <label for="chk-ct">File Uploads</label></br>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align: baseline;"><strong>Time Zone:</strong></td>
+                <td style="vertical-align: baseline;">
+                    <select>
+                        <option selected value="EST">Eastern Time (US & Canada) (-05:00/-04:00)</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align: baseline;"><strong>SIS ID:</strong></td>
+                <td style="vertical-align: baseline;">CS4550.12631.202410</td>
+            </tr>
+            <tr>
+                <td style="vertical-align: baseline;"><strong>Subaccount: </strong></td>
+                <td style="vertical-align: baseline;">CS Undergrad</td>
+            </tr>
+            <tr>
+                <td style="vertical-align: baseline;"><strong>Term: </strong></td>
+                <td style="vertical-align: baseline;">202410_1 Fall 2023 Semester Full Term</td>
+            </tr>
+            <tr>
+                <td style="vertical-align: baseline;"><strong>Participation: </strong></td>
+                <td style="vertical-align: baseline;">
+                    <div>
+                        <select>
+                            <option selected value="TERM">Term</option>
+                        </select></br>
+                        <span>Course participation is limited to <strong>term</strong> start and end dates.</br></span>
+                        <label for="course_start"><strong>Start</br></strong></label>
+                        <input id="course_start" type="date"></br>
+                        <label for="course_end"><strong>End</br></strong></label>
+                        <input id="course_end" type="date"></br>
+                        <input type="checkbox" id="rsbts">
+                        <label for="rsbts">Restrict students from viewing course before term start date</label></br>
+                        <input type="checkbox" id="rsbte">
+                        <label for="rsbte">Restrict students from viewing course after term end date</label></br>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align: baseline;"><strong>Default due time: </strong></td>
+                <td style="vertical-align: baseline;">
+                    <select>
+                        <option value="DEFAULT">Account default (11:59PM)</option>
+                    </select></br>
+                    <sapn>This influences the user interface for setting due dates. It does not change the time due for any existing assignments.</sapn>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align: baseline;"><strong>Language: </strong></td>
+                <td style="vertical-align: baseline;">
+                    <select>
+                        <option value="NONE">Not set (user-configurable, defaults to English</option>
+                    </select></br>
+                    <span>This will override any user/system language preferences. This is only recommended for foreign language courses.</span>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align: baseline;"><strong>File Storage: </strong></td>
+                <td style="vertical-align: baseline;">10000 megabytes</td>
+            </tr>
+            <tr>
+                <td style="vertical-align: baseline;"><strong>Large Course: </strong></td>
+                <td style="vertical-align: baseline;">
+                    <input type="checkbox" value="LC" id="chk-lc"/>
+                    <label for="chk-lc">Launch SpeedGrader Filtereed by Student Group</label></br>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align: baseline;"><strong>Grading Scheme</strong></td>
+                <td style="vertical-align: baseline;">
+                    <input type="checkbox" value="GS" id="chk-gs"/>
+                    <label for="chk-gs">Enable course grading scheme</label></br>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align: baseline;"><strong>License:</strong></td>
+                <td style="vertical-align: baseline;">
+                    <select>
+                        <option selected value="COPYRIGHT">Private (Copyrighted)</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align: baseline;"><strong>File Copyright</strong></td>
+                <td style="vertical-align: baseline;">
+                    <input type="checkbox" value="FC" id="chk-fc"/>
+                    <label for="chk-fc">Copyright and license information must be provided for files before they are published.</label></br>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align: baseline;"><strong>Visibility</strong></td>
+                <td style="vertical-align: baseline;">
+                    <div>
+                        <span>If you need to make your course public please contact your administrator/support.</span></br>
+                        <select>
+                            <option disabled selected value="Course">Course</option>
+                        </select></br>
+                        <input type="checkbox" value="cpub" id="chk-cpub" disabled/>
+                        <label for="chk-cpub">Include this course in the public course index</label></br>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align: baseline;"><strong>Format: </strong></td>
+                <td style="vertical-align: baseline;">
+                    <select>
+                        <option selected value="ONC">On-Campus</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align: baseline;">Master Paths: <strong></strong></td>
+                <td style="vertical-align: baseline;">
+                    <input type="checkbox" value="MASTERY" id="chk-mp"/>
+                    <label for="chk-mp">Enable individual learning paths for students based on assessment</label></br>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align: baseline;"><strong>Description</strong></td>
+                <td style="vertical-align: baseline;">
+                    <textarea></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align: baseline;"><strong></strong></td>
+                <td style="vertical-align: baseline;"><a href="#">more options...</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <button type="button">Update Course Details</button>
+</div>
