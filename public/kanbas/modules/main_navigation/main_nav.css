@@ -1,5 +1,4 @@
 .container-overlay {
-    position: fixed;
     height: 100pc;
     display: flex;
 }
@@ -112,6 +111,12 @@ a {
     margin-bottom: 1em;
 }
 
+.wd-module > .list-group-item:first-child {
+    background-color: #ddd !important;
+    border-top: 1px solid #aaa;
+    border-top-right-radius: 5px;
+}
+
 .wd-module > .list-group-item {
     border-left: 2px solid green !important;
     border-radius: 0;
@@ -130,3 +135,62 @@ a {
 .course-alt-header > i {
     color: white;
 }
+
+.wd-assignment-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.wd-assignment-row > i {
+    color: green;
+}
+
+.wd-assignment-row > .wd-assignment-options {
+    margin-left: auto;
+}
+
+.wd-assignment-row > .wd-assignment-options > i:first-child{
+    color: green;
+}
+
+.wd-grade-option {
+    border: 1px solid #777;
+    padding: 5px;
+    border-radius: 40pc;
+}
+
+.wd-published-text {
+    color: green;
+    padding: 0px 5px 0px 5px;
+}
+
+.wd-inline-input {
+    width: 50pc !important;
+}
+
+.form-group {
+    margin: 5px;
+}
+
+.wd-widget {
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.nav-item > .nav-link {
+    color: red;
+}
+
+.nav-item > .nav-link.active {
+    color: black;
+}
+
+th.no-border, td.no-border {
+    border: none !important;
+}
+
+

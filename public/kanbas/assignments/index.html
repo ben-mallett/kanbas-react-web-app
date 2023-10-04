@@ -3,130 +3,329 @@
 <head>
    <meta charset="UTF-8">
    <title>Title</title>
+   
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://kit.fontawesome.com/183e6916a8.js" crossorigin="anonymous"></script>
+<link href="/kanbas/modules/main_navigation/main_nav.css" rel="stylesheet" />
+<link href="/kanbas/modules/secondary_navigation/secondary_nav.css" rel="stylesheet" />
 </head>
 <body>
 <!-- <div id="root"></div> -->
-   <div style="display:flex;flex-direction: row;">
-        <div id="main_nav">
-            <ul>
-                <li><a href="/kanbas/profile/index.html"">Account</a></li>
-                <li><a href="#"">Dashboard</a></li>
-                <li><a href="/kanbas/assignments/index.html"">Courses</a></li>
-                <li><a href="#"">Calendar</a></li>
-                <li><a href="#"">Inbox</a></li>
-                <li><a href="#"">History</a></li>
-                <li><a href="#"">Studio</a></li>
-                <li><a href="#"">Commons</a></li>
-                <li><a href="#"">Help</a></li>
-            </ul>
+    <div class="container-overlay">
+        <div class="list-group wd-main-nav d-lg-block d-none d-sm-">
+        <img class="list-group-item list=-group-item-action" src="../../../nu_wordmark.png" href="#"/>
+            <a class="list-group-item list-group-item-action" href="/kanbas/profile/index.html">
+                <div class="wd-nav-element">
+                    <i class="fa-solid fa-user fa-xl"></i>
+                    <span>Account</span>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action" href="#">
+                <div class="wd-nav-element">
+                    <i class="fa-solid fa-gauge fa-xl"></i>
+                    <span>Dashboard</span>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action active" href="#">
+                <div class="wd-nav-element">
+                    <i class="fa-solid fa-book fa-xl active"></i>
+                    <span>Courses</span>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action" href="#">
+                <div class="wd-nav-element">
+                    <i class="fa-solid fa-calendar-days fa-xl"></i>
+                    <span>Calendar</span>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action" href="#">
+                <div class="wd-nav-element">
+                    <i class="fa-solid fa-envelope fa-xl"></i>
+                    <span>Inbox</span>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action" href="#">
+                <div class="wd-nav-element">
+                    <i class="fa-solid fa-clock fa-xl"></i>
+                    <span>History</span>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action" href="#">
+                <div class="wd-nav-element">
+                    <i class="fa-solid fa-robot fa-xl"></i>
+                    <span>Studio</span>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action" href="#">
+                <div class="wd-nav-element">
+                    <i class="fa-solid fa-right-from-bracket fa-xl"></i>
+                    <span>Commons</span>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action" href="#">
+                <div class="wd-nav-element">
+                    <i class="fa-solid fa-circle-question fa-xl"></i>
+                    <span>Help</span>
+                </div>
+            </a>
         </div>
-        <div id="secondary_nav">
-            <ul>
-                <li><a href="/kanbas/home/index.html">Home</a></li>
-                <li><a href="#">Modules</a></li>
-                <li><a href="#">Piazza</a></li>
-                <li><a href="#">Zoom Meetings</a></li>
-                <li><a href="/kanbas/assignments/index.html">Assignments</a></li>
-                <li><a href="/kanbas/assignments/index.html">Quizzes</a></li>
-                <li><a href="/kanbas/grades/index.html">Grades</a></li>
-                <li><a href="#">People</a></li>
-                <li><a href="#">Panopto Video</a></li>
-                <li><a href="#">Discussions</a></li>
-                <li><a href="#">Announcements</a></li>
-                <li><a href="#">Pages</a></li>
-                <li><a href="#">Files</a></li>
-                <li><a href="#">Rubrics</a></li>
-                <li><a href="#">Outcomes</a></li>
-                <li><a href="#">Collaborations</a></li>
-                <li><a href="#">Syllabus</a></li>
-                <li><a href="/kanbas/course_details/index.html">Settings</a></li>
-            </ul>
+        <div class="container">
+            <div class="row wd-header">
+                <div class="wd-header-nav">
+                    <a href="/kanbas/modules/main_navigation/main_nav.html"><i class="fa-solid fa-bars fa-xl" style="padding: 10px !important"></i></a>
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">CS5610 Web Dev</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Assignments</li>
+                        </ol>
+                    </nav>
+                    <a href="/kanbas/modules/secondary_navigation/secondary_nav.html" style="margin-left: 20em" class="d-lg-none"><i class="fa-solid fa-chevron-down"></i></a>
+                </div>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="list-group wd-secondary-nav">
+                    <a class="list-group-item list-group-item-action" href="/kanbas/home/index.html">Home</a>
+                    <a class="list-group-item list-group-item-action" href="#">Modules</a>
+                    <a class="list-group-item list-group-item-action" href="#">Piazza</a>
+                    <a class="list-group-item list-group-item-action" href="#">Zoom Meetings</a>
+                    <a class="list-group-item list-group-item-action active" href="/kanbas/assignments/index.html">Assignments</a>
+                    <a class="list-group-item list-group-item-action" href="/kanbas/assignments/index.html">Quizzes</a>
+                    <a class="list-group-item list-group-item-action" href="/kanbas/grades/index.html">Grades</a>
+                    <a class="list-group-item list-group-item-action" href="#">People</a>
+                    <a class="list-group-item list-group-item-action" href="#">Panopto Video</a>
+                    <a class="list-group-item list-group-item-action" href="#">Discussions</a>
+                    <a class="list-group-item list-group-item-action" href="#">Announcements</a>
+                    <a class="list-group-item list-group-item-action" href="#">Pages</a>
+                    <a class="list-group-item list-group-item-action" href="#">Files</a>
+                    <a class="list-group-item list-group-item-action" href="#">Rubrics</a>
+                    <a class="list-group-item list-group-item-action" href="#">Outcomes</a>
+                    <a class="list-group-item list-group-item-action" href="#">Collaborations</a>
+                    <a class="list-group-item list-group-item-action" href="#">Syllabus</a>
+                    <a class="list-group-item list-group-item-action" href="/kanbas/course_details/index.html">Settings</a>
+                </div>
+                <div class="col col-sm-8">
+                    <div class="course-utility-button-container">
+                        <input class="form-control" style="width: 25em; margin-right: auto;" placeholder="Search for assignments">
+                        <button type="button" class="btn btn-secondary">Group</button>
+                        <button type="button" class="btn btn-danger">Module</button>
+                        <a href="/kanbas/assignments/edit.html">
+                            <button type="button" class="btn btn-secondary">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                        </a>
+                    </div> 
+                    <hr>
+                    <div class="list-group wd-module">
+                        <a class="list-group-item list-group-item-action" href="#">
+                            <div class="wd-assignment-row">
+                                <i class="fa-solid fa-chevron-down" style="color: #666 !important;"></i>
+                                <span>Assignments</span>
+                                <span class="rounded-40 wd-grade-option">40% of Total</span>
+                                <div class="wd-assignment-options">
+                                    <i class="fa-solid fa-plus"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="list-group-item list-group-item-action" href="#">
+                            <div class="wd-assignment-row">
+                                <i class="fa-regular fa-clipboard"></i>
+                                <div>
+                                    <span>A1 Setup</span><br>
+                                    <span style="font-size: 10px">Due some day in the future</span>
+                                </div>
+                                <div class="wd-assignment-options">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="list-group-item list-group-item-action" href="#">
+                            <div class="wd-assignment-row">
+                                <i class="fa-regular fa-clipboard"></i>
+                                <div>
+                                    <span>A2 HTML</span><br>
+                                    <span style="font-size: 10px">Due some day in the future</span>
+                                </div>
+                                <div class="wd-assignment-options">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="list-group-item list-group-item-action" href="#">
+                            <div class="wd-assignment-row">
+                                <i class="fa-regular fa-clipboard"></i>
+                                <div>
+                                    <span>A3 CSS</span><br>
+                                    <span style="font-size: 10px">Due some day in the future</span>
+                                </div>
+                                <div class="wd-assignment-options">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="list-group-item list-group-item-action" href="#">
+                            <div class="wd-assignment-row">
+                                <i class="fa-regular fa-clipboard"></i>
+                                <div>
+                                    <span>A4 JavaScript</span><br>
+                                    <span style="font-size: 10px">Due some day in the future</span>
+                                </div>
+                                <div class="wd-assignment-options">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="list-group-item list-group-item-action" href="#">
+                            <div class="wd-assignment-row">
+                                <i class="fa-regular fa-clipboard"></i>
+                                <div>
+                                    <span>A5 Node</span><br>
+                                    <span style="font-size: 10px">Due some day in the future</span>
+                                </div>
+                                <div class="wd-assignment-options">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="list-group-item list-group-item-action" href="#">
+                            <div class="wd-assignment-row">
+                                <i class="fa-regular fa-clipboard"></i>
+                                <div>
+                                    <span>A6 MongoDB</span><br>
+                                    <span style="font-size: 10px">Due some day in the future</span>
+                                </div>
+                                <div class="wd-assignment-options">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-group wd-module">
+                        <a class="list-group-item list-group-item-action" href="#">
+                            <div class="wd-assignment-row">
+                                <i class="fa-solid fa-chevron-down" style="color: #666 !important;"></i>
+                                <span>QUIZZES</span>
+                                <span class="rounded-40 wd-grade-option">10% of Total</span>
+                                <div class="wd-assignment-options">
+                                    <i class="fa-solid fa-plus"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="list-group-item list-group-item-action" href="#">
+                            <div class="wd-assignment-row">
+                                <i class="fa-regular fa-clipboard"></i>
+                                <div>
+                                    <span>Q1 - HTML</span><br>
+                                    <span style="font-size: 10px">Closed about a week ago</span>
+                                </div>
+                                <div class="wd-assignment-options">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="list-group-item list-group-item-action" href="#">
+                            <div class="wd-assignment-row">
+                                <i class="fa-regular fa-clipboard"></i>
+                                <div>
+                                    <span>Q2 - CSS</span><br>
+                                    <span style="font-size: 10px">Due sometime in the future</span>
+                                </div>
+                                <div class="wd-assignment-options">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="list-group-item list-group-item-action" href="#">
+                            <div class="wd-assignment-row">
+                                <i class="fa-regular fa-clipboard"></i>
+                                <div>
+                                    <span>Q3 - JS ES6</span><br>
+                                    <span style="font-size: 10px">Due sometime in the future</span>
+                                </div>
+                                <div class="wd-assignment-options">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="list-group-item list-group-item-action" href="#">
+                            <div class="wd-assignment-row">
+                                <i class="fa-regular fa-clipboard"></i>
+                                <div>
+                                    <span>Q4 NODE</span><br>
+                                    <span style="font-size: 10px">Due sometime in the future</span>
+                                </div>
+                                <div class="wd-assignment-options">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="list-group-item list-group-item-action" href="#">
+                            <div class="wd-assignment-row">
+                                <i class="fa-regular fa-clipboard"></i>
+                                <div>
+                                    <span>Q5 MongoDB</span><br>
+                                    <span style="font-size: 10px">Due sometime in the future</span>
+                                </div>
+                                <div class="wd-assignment-options">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-group wd-module">
+                        <a class="list-group-item list-group-item-action" href="#">
+                            <div class="wd-assignment-row">
+                                <i class="fa-solid fa-chevron-down" style="color: #666 !important;"></i>
+                                <span>Exams</span>
+                                <span class="rounded-40 wd-grade-option">20% of Total</span>
+                                <div class="wd-assignment-options">
+                                    <i class="fa-solid fa-plus"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="list-group-item list-group-item-action" href="#">
+                            <div class="wd-assignment-row">
+                                <i class="fa-regular fa-clipboard"></i>
+                                <div>
+                                    <span>Midterm</span><br>
+                                    <span style="font-size: 10px">Next Month</span>
+                                </div>
+                                <div class="wd-assignment-options">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="list-group-item list-group-item-action" href="#">
+                            <div class="wd-assignment-row">
+                                <i class="fa-regular fa-clipboard"></i>
+                                <div>
+                                    <span>Final</span><br>
+                                    <span style="font-size: 10px">December</span>
+                                </div>
+                                <div class="wd-assignment-options">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="assignments-screen">
-            <div id="assignments-screen" style="display:flex;flex-direction: row;">
-                <input placeholder="Search for Assignments">
-                <button type="button">Group</button>
-                <button type="button">Assignment</button>
-                <select id="assignments-select">
-                    <option selected value="EAD">Edit Assignment Details</option>
-                    <option value="EAL">Edit Assignment List</option>
-                 </select>
-            </div>
-            <div style="display:flex;flex-direction: row;align-items:center;">
-                <h2>ASSIGNMENTS 40% of Total</h2>
-                <select>
-                    <option selected value="EDIT">Edit</option>
-                    <option value="SPEED_GRADER">Speed Grader</option>
-                    <option value="DUPLICATE">Duplicate</option>
-                    <option value="DELETE">Delete</option>
-                    <option value="MOVE_TO">Move to...</option>
-                    <option value="SEND_TO">Send to...</option>
-                    <option value="COPY_TO">Copy to...</option>
-                    <option value="SHARE_TO_COMMONS">Share to Commons</option>
-                </select>
-            </div>
-            <ul>
-                <li><a href="/kanbas/assignments/edit.html">A1 - ENV + HTML</br>Multiple Modules</a><span> | Not available yet</span></li>
-                <li><a href="/kanbas/assignments/edit.html">A2 - CSS + BOOTSTRAP</br>Multiple Modules</a><span> | Not available yet</span></li>
-                <li><a href="/kanbas/assignments/edit.html">A3 - JS + REACT</br>Multiple Modules</a><span> | Not available yet</span></li>
-                <li><a href="/kanbas/assignments/edit.html">A4 - STATE + REDUX</br>Multiple Modules</a><span> | Not available yet</span></li>
-                <li><a href="/kanbas/assignments/edit.html">A5 - NODE + SESSION</br>Multiple Modules</a><span> | Not available yet</span></li>
-                <li><a href="/kanbas/assignments/edit.html">A6 - MONGO + MONGOOSE</br>Multiple Modules</a><span> | Not available yet</span></li>
-            </ul>
-            <div style="display:flex;flex-direction: row;align-items: center;">
-                <h2>QUIZZES 10% of Total</h2>
-                <select>
-                    <option selected value="EDIT">Edit</option>
-                    <option value="SPEED_GRADER">Speed Grader</option>
-                    <option value="DUPLICATE">Duplicate</option>
-                    <option value="DELETE">Delete</option>
-                    <option value="MOVE_TO">Move to...</option>
-                    <option value="SEND_TO">Send to...</option>
-                    <option value="COPY_TO">Copy to...</option>
-                    <option value="SHARE_TO_COMMONS">Share to Commons</option>
-                </select>
-            </div>
-            <ul>
-                <li><a href="#">Q1 - HTML</br>Multiple Modules</a><span> | Not available yet</span></li>
-                <li><a href="#">Q2 - CSS</br>Multiple Modules</a><span> | Not available yet</span></li>
-                <li><a href="#">Q3 - JS ES6</br>Multiple Modules</a><span> | Not available yet</span></li>
-                <li><a href="#">Q4 - NODE</br>Multiple Modules</a><span> | Not available yet</span></li>
-                <li><a href="#">Q5 - MONGO</br>Multiple Modules</a><span> | Not available yet</span></li>
-            </ul>
-            <div style="display:flex;flex-direction: row;align-items: center;">
-                <h2>EXAMS 20% of Total</h2>
-                <select>
-                    <option selected value="EDIT">Edit</option>
-                    <option value="SPEED_GRADER">Speed Grader</option>
-                    <option value="DUPLICATE">Duplicate</option>
-                    <option value="DELETE">Delete</option>
-                    <option value="MOVE_TO">Move to...</option>
-                    <option value="SEND_TO">Send to...</option>
-                    <option value="COPY_TO">Copy to...</option>
-                    <option value="SHARE_TO_COMMONS">Share to Commons</option>
-                </select>
-            </div>
-            <ul>
-                <li><a href="#">Midterm</br>Multiple Modules</a><span> | Not available yet</span></li>
-                <li><a href="#">Final</br>Multiple Modules</a><span> | Not available yet</span></li>
-            </ul>
-            <div style="display:flex;flex-direction: row;align-items: center;">
-                <h2>PROJECT 30% of Total</h2>
-                <select>
-                    <option selected value="EDIT">Edit</option>
-                    <option value="SPEED_GRADER">Speed Grader</option>
-                    <option value="DUPLICATE">Duplicate</option>
-                    <option value="DELETE">Delete</option>
-                    <option value="MOVE_TO">Move to...</option>
-                    <option value="SEND_TO">Send to...</option>
-                    <option value="COPY_TO">Copy to...</option>
-                    <option value="SHARE_TO_COMMONS">Share to Commons</option>
-                </select>
-            </div>
-            <ul>
-                <li><a href="#">Project</br>Multiple Modules</a><span> | Not available yet</span></li>
-            </ul>
-        </div>
-   </div>
 </body>
 </html>
