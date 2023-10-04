@@ -1,0 +1,132 @@
+.container-overlay {
+    position: fixed;
+    height: 100pc;
+    display: flex;
+}
+
+.wd-main-nav {
+    background-color: black;
+    width: 90px;
+}
+
+.wd-main-nav > img {
+    width: 100%;
+    height: auto;
+    padding: 1em;
+}
+
+.wd-main-nav.list-group {
+    border-radius: 0;
+}
+
+.wd-main-nav.list-group > .list-group-item {
+    background-color: black;
+    color: white;
+    border-radius: 0;
+    border-color: black;
+    margin: 0.5px 0 0.5px 0;
+}
+
+.wd-main-nav.list-group > .list-group-item.active {
+    background-color: white;
+    color: red;
+}
+
+.wd-nav-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wd-nav-element > i {
+    height: 1.5em;
+    padding-top: 0.75em;
+    color: red;
+}
+
+.wd-nav-element > i.active {
+    color: grey;
+}
+
+.wd-header {
+    margin: 1em;
+}
+
+.wd-header > div {
+    padding-bottom: 1em;
+    width: 100pc;
+}
+
+.wd-header.wd-header-nav > i {
+    margin-top: 1em;
+}
+
+.wd-header-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-center;
+}
+
+.wd-header-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    padding: 1em;
+    margin: 1em;
+}
+
+.wd-profile-pic-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.wd-profile-pic-header > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.wd-profile-pic-header > div > * {
+    padding: 5px 0 5px 0;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+}
+
+.course-utility-button-container {
+    display: flex;
+    flex-direction :row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.container {
+    width: 100pc !important;
+}
+
+.wd-module {
+    margin-bottom: 1em;
+}
+
+.wd-module > .list-group-item {
+    border-left: 2px solid green !important;
+    border-radius: 0;
+}
+
+.course-alt-header {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100pc;
+    background-color: black;
+    color: white;
+}
+
+.course-alt-header > i {
+    color: white;
+}
