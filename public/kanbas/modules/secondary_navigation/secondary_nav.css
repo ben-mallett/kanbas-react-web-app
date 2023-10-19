@@ -1,0 +1,72 @@
+.wd-secondary-nav {
+    background-color: white;
+    color: red;
+    margin-left: 2em;
+    width: 200px;
+}
+
+.wd-secondary-nav.list-group {
+    border-radius: 0;
+}
+
+.wd-secondary-nav.list-group > .list-group-item {
+    border: none;
+    margin: 3px 0 3px 0;
+    padding: 5px;
+    color: red;
+}
+
+.wd-secondary-nav.list-group > .list-group-item.active {
+    background-color: white;
+    color: black;
+    border-left: 2px solid black;
+}
+
+button.btn-primary {
+    color: white !important; 
+    background-color: red !important;
+    border: 1px solid darkred !important;
+}
+
+button.btn-primary:focus, button.btn-primary:hover {
+    background-color: darkred !important;
+}
+
+button.btn-secondary {
+    background-color: #ddd !important;
+    color: black !important
+}
+
+button.btn-secondary:focus, button.btn-secondary:hover {
+    background-color: #bbb !important;
+}
+
+button {
+    border: 1px solid #ddd;
+}
+
+.wd-link-edit {
+    display: flex; 
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.wd-link-edit > i {
+    padding: 1em;
+}
+
+.wd-link-edit > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wd-subtitle {
+    margin-left: 1em;
+    padding-bottom: 1em;
+}
+
+.wd-card {
+    width: 16em;
+    margin: 2em;
+}

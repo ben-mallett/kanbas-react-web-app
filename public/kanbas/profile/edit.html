@@ -3,72 +3,154 @@
 <head>
    <meta charset="UTF-8">
    <title>Title</title>
+   
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://kit.fontawesome.com/183e6916a8.js" crossorigin="anonymous"></script>
+<link href="/kanbas/modules/main_navigation/main_nav.css" rel="stylesheet" />
+<link href="/kanbas/modules/secondary_navigation/secondary_nav.css" rel="stylesheet" />
 </head>
 <body>
 <!-- <div id="root"></div> -->
    <div style="display:flex;flex-direction: row;">
-        <div id="main_nav">
-            <ul>
-                <li><a href="/kanbas/profile/index.html"">Account</a></li>
-                <li><a href="#"">Dashboard</a></li>
-                <li><a href="/kanbas/assignments/index.html"">Courses</a></li>
-                <li><a href="#"">Calendar</a></li>
-                <li><a href="#"">Inbox</a></li>
-                <li><a href="#"">History</a></li>
-                <li><a href="#"">Studio</a></li>
-                <li><a href="#"">Commons</a></li>
-                <li><a href="#"">Help</a></li>
-            </ul>
-        </div>
-        <div>
-            <ul>
-                <li><a href="#">Notifications</a></li>
-                <li><a href="/kanbas/profile/index.html">Profile</a></li>
-                <li><a href="#">Files</a></li>
-                <li><a href="#">Settings</a></li>
-                <li><a href="#">ePortfolios</a></li>
-                <li><a href="#">Shared Content</a></li>
-                <li><a href="#">The Hub</a></li>
-                <li><a href="#">Qwickly Course Tools</a></li>
-                <li><a href="#">Global Announcements</a></li>
-            </ul>
-        </div>
-        <div>
-            <h2>Ben Mallett</h2>
-            <label for="name_prof_edit">Name:* </label>
-            <input id="name_prof_edit" value="Ben Mallett">
-            <label for="pron_prof_edit">Pronouns: </label>
-            <select id="pron_prof_edit">
-                <option selected value="NONE">None</option>
-            </select></br>
-            <label for="title_prof_edit">Title: </label>
-            <input id="title_prof_edit">
-            <h3>Contact</h3>
-            <p>No registered services, you can add some on the <a href="#">settings</a> page.</p>
-            <h3>Biography</h3>
-            <p>Student at Northeastern University, Firmware Engineer at Running Tide, interested in carbon sequestration and robotics.</p>
-            <textarea cols="60" rows="3">Student at Northeastern University, Firmware Engineer at Running Tide, interested in carbon sequestration and robotics.</textarea></br>
-            <h3>Links</h3>
-            <ul>
-                <li><a href="#">Youtube (external)</a></li>
-            </ul>
-            <div style="display: flex; flex-direction: row;align-items: flex-end;">
-                <div>
-                    <h4>Title</h4>
-                    <input placeholder="Youtube">
+    <div style="display: flex; flex-direction: row;" class="container-overlay">
+        <div class="list-group wd-main-nav">
+        <img class="list-group-item list=-group-item-action" src="../../../nu_wordmark.png" href="#"/>
+            <a class="list-group-item list-group-item-action active" href="/kanbas/profile/index.html">
+                <div class="wd-nav-element">
+                    <i class="fa-solid fa-user fa-xl active"></i>
+                    <span>Account</span>
                 </div>
-                <span>&rarr;</span>
-                <div>
-                    <h4>URL</h4>
-                    <input placeholder="Youtube">
+            </a>
+            <a class="list-group-item list-group-item-action" href="#">
+                <div class="wd-nav-element">
+                    <i class="fa-solid fa-gauge fa-xl"></i>
+                    <span>Dashboard</span>
                 </div>
-                <a href="#">Remove</a>
+            </a>
+            <a class="list-group-item list-group-item-action" href="#">
+                <div class="wd-nav-element">
+                    <i class="fa-solid fa-book fa-xl"></i>
+                    <span>Courses</span>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action" href="#">
+                <div class="wd-nav-element">
+                    <i class="fa-solid fa-calendar-days fa-xl"></i>
+                    <span>Calendar</span>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action" href="#">
+                <div class="wd-nav-element">
+                    <i class="fa-solid fa-envelope fa-xl"></i>
+                    <span>Inbox</span>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action" href="#">
+                <div class="wd-nav-element">
+                    <i class="fa-solid fa-clock fa-xl"></i>
+                    <span>History</span>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action" href="#">
+                <div class="wd-nav-element">
+                    <i class="fa-solid fa-robot fa-xl"></i>
+                    <span>Studio</span>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action" href="#">
+                <div class="wd-nav-element">
+                    <i class="fa-solid fa-right-from-bracket fa-xl"></i>
+                    <span>Commons</span>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action" href="#">
+                <div class="wd-nav-element">
+                    <i class="fa-solid fa-circle-question fa-xl"></i>
+                    <span>Help</span>
+                </div>
+            </a>
+        </div>
+        <div class="container">
+            <div class="row wd-header">
+                <div>
+                    <i class="fa-solid fa-bars fa-xl"></i>
+                    <span class="wd-header-text">Ben Mallett's Profile</span>
+                </div>
+                <hr>
             </div>
-            <button type="button">Add another link</button></br>
-            <button type="button">Cancel</button>
-            <button type="button"><a href="/kanbas/profile/index.html">Save Profile</a></button></br>
-            <button type="button"><a href="/kanbas/profile/index.html">Edit Profile</a></button>
-            <button type="button">Cancel Editing</button>
+            <div class="row">
+                <div class="list-group wd-secondary-nav col col-sm-2">
+                    <a class="list-group-item list-group-item-action">Notifications</a>
+                    <a class="list-group-item list-group-item-action active" href="/kanbas/profile/index.html">Profile</a>
+                    <a class="list-group-item list-group-item-action" href="#">Files</a>
+                    <a class="list-group-item list-group-item-action" href="#">Settings</a>
+                    <a class="list-group-item list-group-item-action" href="#">ePortfolios</a>
+                    <a class="list-group-item list-group-item-action" href="#">Shared Content</a>
+                    <a class="list-group-item list-group-item-action" href="#">The Hub</a>
+                    <a class="list-group-item list-group-item-action" href="#">Qwickly Course Tools</a>
+                    <a class="list-group-item list-group-item-action" href="#">Global Announcements</a>
+                </div>
+                <div class="col-sm-6">
+                    <form>
+                        <div class="wd-profile-pic-header">
+                            <div>
+                                <i class="fa-solid fa-user fa-6x"></i>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="name_prof_edit">Name:* </label>
+                            <input class="form-control"  id="name_prof_edit" value="Ben Mallett">
+                            <label for="pron_prof_edit">Pronouns: </label>
+                            <select class="form-control" id="pron_prof_edit">
+                                <option selected value="NONE">None</option>
+                            </select></br>
+                            <label for="title_prof_edit">Title: </label>
+                            <input class="form-control"  id="title_prof_edit">
+                        </div>
+                        <h4>Contact</h4>
+                        <p>No registered services, you can add some on the <a href="#">settings</a> page.</p>
+                        <h4>Biography</h4>
+                        <textarea class="form-control" cols="60" rows="3">Student at Northeastern University, Firmware Engineer at Running Tide, interested in carbon sequestration and robotics.</textarea></br>
+                        <h4>Links</h4>
+                        <div class="form-group">
+                            <div class="wd-link-edit">
+                                <div>
+                                    <h5>Title</h5>
+                                    <input class="form-control" placeholder="Youtube">
+                                </div>
+                                <i class="fa-solid fa-right-long fa-lg"></i>
+                                <div>
+                                    <h5>URL</h5>
+                                    <input class="form-control" placeholder="Youtube">
+                                </div>
+                                <i class="fa-solid fa-xmark fa-lg"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <button type="button">Add another link</button>
+                        </div>
+                        <hr>
+                        <a href="/kanbas/profile/index.html">
+                            <button type="button" class="btn btn-secondary">
+                                Cancel
+                            </button>
+                        </a>
+                        <a href="/kanbas/profile/index.html">
+                            <button type="button" class="btn btn-primary">
+                                Save Profile
+                            </button>
+                        </a>
+                    </form>
+                </div>
+                <div class="col col-sm-auto">
+                    <a href="/kanbas/profile/index.html">
+                        <button type="button" class="btn btn-secondary">
+                            <i class="fa-regular fa-pen-to-square fa-xs"></i>
+                            Cancel Editing
+                        </button>
+                    </a>
+                </div>  
+            </div>
         </div>
    </div>
 </body>
