@@ -1,8 +1,12 @@
 .wd-secondary-nav {
     background-color: white;
     color: red;
-    margin-left: 2em;
     width: 200px;
+}
+
+.wd-card-link {
+    text-decoration: none;
+    color: black;
 }
 
 .wd-secondary-nav.list-group {
