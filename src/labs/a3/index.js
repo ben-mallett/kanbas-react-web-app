@@ -3,18 +3,24 @@ import JavaScript from "./components/javascript";
 import PathParameters from "./components/path_params";
 import ConditionalOutput from "./conditional";
 import Styles from "./styles";
-import TodoList from "./todos/todo_list";
-
+import { useSelector } from "react-redux";
 function Assignment3() {
-    return (
-      <div className="container">
-        <h1>Assignment 3</h1>
+  const { todos } = useSelector((state) => state.todoreducer);
+  return (
+    <div>
+      <h2>Assignment 3</h2>
+      <ul className="list-group">
+        {todos.map((todo) => (
+          <li className="list-group-item" key={todo.id}>
+            {todo.title}
+          </li>
+        ))}
+      </ul>
         <JavaScript/>
         <PathParameters/>
         <Classes/>
         <Styles/>
         <ConditionalOutput/>
-        <TodoList/>
       </div>
     );
   }
