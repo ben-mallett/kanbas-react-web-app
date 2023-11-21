@@ -33,34 +33,39 @@ function Dashboard(
 
             <div className="row">
                 <div className="wd-subtitle d-flex flex-row flex-wrap">
-                    {courses.map((course) => (
-                        <div className="card wd-card">
-                            <img className="card-img-top" src="../../web_img.PNG" alt="Screenshot of dashboard page"/>
-                            <Link key={course._id} to={`/Kanbas/Courses/${course._id}`} className="wd-card-link">
-                                <div className="card-body">
-                                    <h5 className="card-title">{course.name}</h5>
-                                    <p>{course.number}</p>
-                                </div>
-                            </Link>
-                            <button
-                                className="btn btn-secondary"
-                                onClick={(event) => {
-                                    event.preventDefault();
-                                    setCourse(course);
-                            }}>
-                                Edit Course
-                            </button>
-
-                            <button 
-                                className="btn btn-primary"
-                                onClick={(event) => {
-                                    event.preventDefault();
-                                    deleteCourse(course._id);
-                                }}
-                            >
-                                Delete
-                            </button>
-                        </div>))}
+                    {courses.map((course) => {
+                        console.log(course)
+                        return (
+                            <div className="card wd-card">
+                                <img className="card-img-top" src="../../web_img.PNG" alt="Screenshot of dashboard page"/>
+                                <Link key={course._id.$oid} to={`/Kanbas/Courses/${course._id.$oid}`} className="wd-card-link">
+                                    <div className="card-body">
+                                        <h5 className="card-title">{course.name}</h5>
+                                        <p>{course.number}</p>
+                                    </div>
+                                </Link>
+                                <button
+                                    className="btn btn-secondary"
+                                    onClick={(event) => {
+                                        event.preventDefault();
+                                        setCourse({...course});
+                                }}>
+                                    Edit Course
+                                </button>
+    
+                                <button 
+                                    className="btn btn-primary"
+                                    onClick={(event) => {
+                                        event.preventDefault();
+                                        deleteCourse(course);
+                                    }}
+                                >
+                                    Delete
+                                </button>
+                            </div>)
+                            
+                    })
+                    }
                 </div>
             </div>
         </div>

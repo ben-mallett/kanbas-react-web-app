@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import { FaEllipsis } from "react-icons/fa6";
-import db from "../../database";
 import { useSelector, useDispatch } from "react-redux";
+import { useEffect } from "react";
 import {
   addModule,
   deleteModule,
   updateModule,
   setModule,
+  setModules,
 } from "./modulereducer";
+import * as client from "./client";
 
 
 function ModuleList() {
@@ -16,6 +18,29 @@ function ModuleList() {
   const modules = useSelector((state) => state.modulesReducer.modules);
   const module = useSelector((state) => state.modulesReducer.module);
   const dispatch = useDispatch();
+  useEffect(() => {
+    client.findModulesForCourse(courseId)
+      .then((modules) =>
+        dispatch(setModules(modules))
+    );
+  }, [courseId]);
+
+  const handleAddModule = () => {
+    client.createModule(courseId, module).then((module) => {
+      dispatch(addModule(module));
+    });
+  };
+
+  const handleDeleteModule = (moduleId) => {
+    client.deleteModule(moduleId).then((status) => {
+      dispatch(deleteModule(moduleId));
+    });
+  };
+
+  const handleUpdateModule = async () => {
+    const status = await client.updateModule(module);
+    dispatch(updateModule(module));
+  };
 
   return (
     <div>
@@ -61,8 +86,8 @@ function ModuleList() {
                     />
                 </div>
                 
-                <button className="btn btn-primary" onClick={() => dispatch(addModule({ ...module, course: courseId }))}>Add</button>
-                <button className="btn btn-secondary" onClick={() => dispatch(updateModule(module))}>Update</button>
+                <button className="btn btn-primary" onClick={handleAddModule}>Add</button>
+                <button className="btn btn-secondary" onClick={() => handleUpdateModule()}>Update</button>
 
             </li>
 
@@ -79,11 +104,11 @@ function ModuleList() {
                                 </div>
                                 <button
                                     className="btn btn-secondary"
-                                    onClick={() => dispatch(setModule(module))}>
+                                    onClick={() => handleUpdateModule()}>
                                     Edit
                                 </button>
                                 <button
-                                    onClick={() => dispatch(deleteModule(module._id))}
+                                    onClick={() => handleDeleteModule(module._id)}
                                     className="btn btn-danger"
                                 >
                                     Delete
